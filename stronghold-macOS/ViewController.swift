@@ -1,0 +1,28 @@
+//
+//  ViewController.swift
+//  stronghold-macOS
+//
+//  Created by Aaron Lichtman on 7/1/18.
+//  Copyright © 2018 Aaron Lichtman. All rights reserved.
+//
+
+import Cocoa
+import Swipt
+
+class ViewController: NSViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+    override var representedObject: Any? {
+        didSet {
+        // Update the view, if already loaded.
+        }
+    }
+
+
+}
+
