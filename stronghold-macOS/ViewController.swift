@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import Swipt
 
 class ViewController: NSViewController {
 
