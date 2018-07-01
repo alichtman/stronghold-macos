@@ -1,0 +1,2 @@
+# stronghold-macOS
+Stronghold GUI
