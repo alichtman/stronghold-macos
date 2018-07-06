@@ -85,4 +85,14 @@ class SystemUtilities {
     func disablePrinterSharing() {
         
     }
+    
+    /// Run shell commands with bash
+    func shell(command: String) -> Int32 {
+        let task = Process()
+        task.launchPath = "/usr/bin/env"
+        task.arguments = ["bash", "-c", command]
+        task.launch()
+        task.waitUntilExit()
+        return task.terminationStatus
+    }
 }
