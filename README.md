@@ -20,9 +20,9 @@ After the original CLI was received so well, reaching a wider audience was an ob
 * Probably some libraries used.
 * And another one too probably.
 
-#### Authors
+#### Developers
 
-1. [Aaron Lictman](https://github.com/alichtman)
-2. [Farid Waziri](https://github.com/FaridWaziri-CalBear)
+* [Aaron Lictman](https://github.com/alichtman)
+* [Farid Waziri](https://github.com/FaridWaziri-CalBear)
 
 
