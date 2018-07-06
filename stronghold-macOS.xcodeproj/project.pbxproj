@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18851A5520EF0EBE000D3396 /* SystemUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18851A5420EF0EBE000D3396 /* SystemUtilities.swift */; };
 		1897009820E905F40031BCD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897009720E905F40031BCD4 /* AppDelegate.swift */; };
-		1897009A20E905F40031BCD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897009920E905F40031BCD4 /* ViewController.swift */; };
+		1897009A20E905F40031BCD4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897009920E905F40031BCD4 /* SettingsViewController.swift */; };
 		1897009C20E905F50031BCD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1897009B20E905F50031BCD4 /* Assets.xcassets */; };
 		1897009F20E905F50031BCD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1897009D20E905F50031BCD4 /* Main.storyboard */; };
 		189700AB20E905F50031BCD4 /* stronghold_macOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189700AA20E905F50031BCD4 /* stronghold_macOSUITests.swift */; };
@@ -25,9 +26,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18851A5420EF0EBE000D3396 /* SystemUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemUtilities.swift; sourceTree = "<group>"; };
 		1897009420E905F40031BCD4 /* stronghold-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stronghold-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1897009720E905F40031BCD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1897009920E905F40031BCD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1897009920E905F40031BCD4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1897009B20E905F50031BCD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1897009E20E905F50031BCD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		189700A020E905F50031BCD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				1897009720E905F40031BCD4 /* AppDelegate.swift */,
-				1897009920E905F40031BCD4 /* ViewController.swift */,
+				1897009920E905F40031BCD4 /* SettingsViewController.swift */,
+				18851A5420EF0EBE000D3396 /* SystemUtilities.swift */,
 				1897009B20E905F50031BCD4 /* Assets.xcassets */,
 				1897009D20E905F50031BCD4 /* Main.storyboard */,
 				189700A020E905F50031BCD4 /* Info.plist */,
@@ -195,7 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1897009A20E905F40031BCD4 /* ViewController.swift in Sources */,
+				18851A5520EF0EBE000D3396 /* SystemUtilities.swift in Sources */,
+				1897009A20E905F40031BCD4 /* SettingsViewController.swift in Sources */,
 				1897009820E905F40031BCD4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
