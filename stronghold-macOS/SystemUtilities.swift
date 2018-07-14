@@ -10,45 +10,63 @@ import Cocoa
 
 class SystemUtilities {
     
-    // MARK: Firewall Utilities
+    // MARK: Networking
+    
+    // Firewalls
     
     func enableFirewall() {
+        _ = shell("sudo launchctl load /System/Library/LaunchDaemons/com.apple.alf.agent.plist")
+        _ = shell("sudo launchctl load /System/Library/LaunchAgents/com.apple.alf.useragent.plist")
+        _ = shell("sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on")
+    }
+    
+    func disableFirewall() {
         
     }
     
     func enableLogging() {
-        
+        _ = shell("sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setloggingmode on")
+    }
+    
+    func disableLogging() {
+        _ = shell("sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setloggingmode off")
     }
     
     func enableStealthMode() {
-        
+        _ = shell("sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on")
     }
     
-    // MARK: General System Protection
+    func disableStealthMode() {
+        _ = shell("sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode off")
+    }
     
-    func enableGatekeeper() {
-        
-    }
-    func preventAutomaticSoftwareWhitelisting() {
-        
-    }
+    // Captive Portal
     
     func disableCaptivePortalAssistant() {
+        _ = shell("sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false")
+    }
+    
+    func enableCaptivePortalAssistant() {
         
     }
     
-    // MARK: User Metadata Storage
+    // MARK: User Data Storage
     
-    func clearLanguageModelingMetadata() {
+    func clearSiriAnalyticsDatabase() {
         
+    }
+    
+    func clearLanguageModelingDatabase() {
+        _ = shell("rm -rfv \"~/Library/LanguageModeling/*\" \"~/Library/Spelling/*\" \"~/Library/Suggestions/*\"")
     }
     
     func disableLanguageModelingDataCollection() {
-        
+        _ = shell("sudo chmod -R 000 ~/Library/LanguageModeling ~/Library/Spelling ~/Library/Suggestions")
+        _ = shell("sudo chflags -R uchg ~/Library/LanguageModeling ~/Library/Spelling ~/Library/Suggestions")
     }
     
     func clearQuickLookMetadata() {
-        
+        _ = shell("rm -rfv \"~/Library/Application Support/Quick Look/*\"")
     }
     
     func clearDownloadsMetadata() {
@@ -59,17 +77,35 @@ class SystemUtilities {
         
     }
     
-    func clearSiriAnalyticsDatabase() {
+    // MARK: System Behavior
+    
+    func enableGatekeeper() {
+        _ = shell("sudo spctl --master-enable")
+        _ = shell("sudo spctl --enable --label \"Developer ID\"")
+    }
+    
+    func disableGatekeeper() {
         
     }
     
-    // MARK: User Safety
+    func disableAutomaticSoftwareWhitelisting() {
+        _ = shell("sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsigned off")
+        _ = shell("sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsignedapp off")
+    }
+    
+    func enableAutomaticSoftwareWhitelisting() {
+        
+    }
     
     func lockMacWhenScreensaverStarts() {
         
     }
     
-    func displayAllFileExtensions() {
+    func enableShowAllFileExtensions() {
+        
+    }
+    
+    func disableShowAllFileExtensions() {
         
     }
     
@@ -77,17 +113,28 @@ class SystemUtilities {
         
     }
     
+    func enableSavingDocsToCloudByDefault() {
+        
+    }
+    
     func showHiddenFilesInFinder () {
         
     }
     
+    func hideHiddenFilesInFinder () {
+        
+    }
     
     func disablePrinterSharing() {
         
     }
     
+    func enablePrinterSharing() {
+        
+    }
+    
     /// Run shell commands with bash
-    func shell(command: String) -> Int32 {
+    func shell(_ command: String) -> Int32 {
         let task = Process()
         task.launchPath = "/usr/bin/env"
         task.arguments = ["bash", "-c", command]
