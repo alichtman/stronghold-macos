@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		18851A5520EF0EBE000D3396 /* SystemUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18851A5420EF0EBE000D3396 /* SystemUtilities.swift */; };
 		1897009820E905F40031BCD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897009720E905F40031BCD4 /* AppDelegate.swift */; };
-		1897009A20E905F40031BCD4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897009920E905F40031BCD4 /* SettingsViewController.swift */; };
 		1897009C20E905F50031BCD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1897009B20E905F50031BCD4 /* Assets.xcassets */; };
 		1897009F20E905F50031BCD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1897009D20E905F50031BCD4 /* Main.storyboard */; };
 		189700AB20E905F50031BCD4 /* stronghold_macOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189700AA20E905F50031BCD4 /* stronghold_macOSUITests.swift */; };
+		18BAC7B020FC677900D046D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BAC7AF20FC677900D046D2 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,6 @@
 		18851A5420EF0EBE000D3396 /* SystemUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemUtilities.swift; sourceTree = "<group>"; };
 		1897009420E905F40031BCD4 /* stronghold-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stronghold-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1897009720E905F40031BCD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1897009920E905F40031BCD4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1897009B20E905F50031BCD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1897009E20E905F50031BCD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		189700A020E905F50031BCD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		189700A620E905F50031BCD4 /* stronghold-macOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stronghold-macOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189700AA20E905F50031BCD4 /* stronghold_macOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stronghold_macOSUITests.swift; sourceTree = "<group>"; };
 		189700AC20E905F50031BCD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BAC7AF20FC677900D046D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +79,12 @@
 			isa = PBXGroup;
 			children = (
 				1897009720E905F40031BCD4 /* AppDelegate.swift */,
-				1897009920E905F40031BCD4 /* SettingsViewController.swift */,
 				18851A5420EF0EBE000D3396 /* SystemUtilities.swift */,
 				1897009B20E905F50031BCD4 /* Assets.xcassets */,
 				1897009D20E905F50031BCD4 /* Main.storyboard */,
 				189700A020E905F50031BCD4 /* Info.plist */,
 				189700A120E905F50031BCD4 /* stronghold_macOS.entitlements */,
+				18BAC7AF20FC677900D046D2 /* MainViewController.swift */,
 			);
 			path = "stronghold-macOS";
 			sourceTree = "<group>";
@@ -198,8 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BAC7B020FC677900D046D2 /* MainViewController.swift in Sources */,
 				18851A5520EF0EBE000D3396 /* SystemUtilities.swift in Sources */,
-				1897009A20E905F40031BCD4 /* SettingsViewController.swift in Sources */,
 				1897009820E905F40031BCD4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -12,52 +11,19 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="stronghold-macOS" id="1Xt-HY-uBw">
+                            <menuItem title="Stronghold" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="stronghold-macOS" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Stronghold" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About stronghold-macOS" id="5kV-Vb-QxS">
+                                        <menuItem title="About Stronghold" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
-                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
-                                        <menuItem title="Hide stronghold-macOS" keyEquivalent="h" id="Olw-nP-bQN">
-                                            <connections>
-                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
-                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Show All" id="Kd2-mp-pUS">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit stronghold-macOS" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit swift-macos-sidebar" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
-                                            </connections>
-                                        </menuItem>
-                                    </items>
-                                </menu>
-                            </menuItem>
-                            <menuItem title="Help" id="wpr-3q-Mcd">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
-                                    <items>
-                                        <menuItem title="stronghold-macOS Help" keyEquivalent="?" id="FKE-Sm-Kum">
-                                            <connections>
-                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -73,123 +39,166 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="-87"/>
+            <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="496" height="326"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="55055E4B-6C97-4709-BDDA-0077A71D83AA" autosavesConfiguration="NO" showsBaselineSeparator="NO" displayMode="iconAndLabel" sizeMode="regular" id="nka-he-Eh5">
+                            <allowedToolbarItems/>
+                            <defaultToolbarItems/>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="a2i-R8-bxM" kind="relationship" relationship="window.shadowedContentViewController" id="qAp-0w-tDs"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="83" y="200"/>
+            <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <!--Split View Controller-->
+        <scene sceneID="Paf-ff-BpK">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="stronghold_macOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="498" height="336"/>
+                <splitViewController id="a2i-R8-bxM" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="zS6-kZ-unN"/>
+                        <splitViewItem id="ivQ-02-5LR"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="boq-Y9-HCF">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="a2i-R8-bxM" id="gEt-tX-dsi"/>
+                        </connections>
+                    </splitView>
+                    <connections>
+                        <outlet property="splitView" destination="boq-Y9-HCF" id="kge-4M-LD0"/>
+                        <segue destination="IPi-NK-tqr" kind="relationship" relationship="splitItems" id="Nvb-y8-dhq"/>
+                        <segue destination="Ayf-cg-MIv" kind="relationship" relationship="splitItems" id="Rk8-gU-Bhz"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="yco-8M-4pf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="686"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="CGG-UW-wVV">
+            <objects>
+                <viewController id="IPi-NK-tqr" customClass="MainViewController" customModule="stronghold_macOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="1Rh-RE-Ugu">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fhr-iM-UvY">
-                                <rect key="frame" x="117" y="86" width="265" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="The easiest way to secure your Mac." id="Vf6-l5-Jkj">
-                                    <font key="font" metaFont="systemLight" size="16"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N2L-x5-rHm">
-                                <rect key="frame" x="182" y="113" width="135" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Stronghold" id="Epq-hd-U87">
-                                    <font key="font" metaFont="systemBold" size="25"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXM-qu-W4q">
-                                <rect key="frame" x="168" y="42" width="162" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Go to the War Room" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QFV-DI-X5C">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <segue destination="zxP-FI-Cr6" kind="show" id="LYP-YW-xWA"/>
-                                </connections>
-                            </button>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="034-VA-kJC">
-                                <rect key="frame" x="187" y="148" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="stronghold-icon" id="PIe-yT-iBQ"/>
-                            </imageView>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="17" horizontalPageScroll="10" verticalLineScroll="17" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWc-u7-bnI">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="262"/>
+                                <clipView key="contentView" drawsBackground="NO" id="sAW-GG-wCB">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="262"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="14" outlineTableColumn="moM-op-dBW" id="qd2-Vq-nCf">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="262"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="3" height="0.0"/>
+                                            <color key="backgroundColor" red="0.0" green="0.41176470588235292" blue="0.85098039215686272" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                            <tableColumns>
+                                                <tableColumn identifier="" width="197" minWidth="40" maxWidth="1000" id="moM-op-dBW">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Items">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="f8M-Jh-ThH">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <tableCellView identifier="ItemCell" id="eaU-mj-4Os">
+                                                            <rect key="frame" x="1" y="0.0" width="197" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="lfb-nm-bRc">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="197" height="17"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" drawsBackground="YES" id="RGE-oV-9kC">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="lfb-nm-bRc" firstAttribute="centerY" secondItem="eaU-mj-4Os" secondAttribute="centerY" id="BiR-W5-V3U"/>
+                                                                <constraint firstItem="lfb-nm-bRc" firstAttribute="centerX" secondItem="eaU-mj-4Os" secondAttribute="centerX" id="MFN-Q4-Tgs"/>
+                                                                <constraint firstItem="lfb-nm-bRc" firstAttribute="leading" secondItem="eaU-mj-4Os" secondAttribute="leading" id="Mr7-on-Box"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="textField" destination="lfb-nm-bRc" id="Tg9-6w-7LQ"/>
+                                                            </connections>
+                                                        </tableCellView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                            <connections>
+                                                <outlet property="dataSource" destination="IPi-NK-tqr" id="mfv-nG-CxX"/>
+                                                <outlet property="delegate" destination="IPi-NK-tqr" id="vBn-pV-iQe"/>
+                                            </connections>
+                                        </outlineView>
+                                    </subviews>
+                                    <nil key="backgroundColor"/>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="TAh-p2-DZp"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="bhk-aJ-BdX"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="gHw-y3-KTo">
+                                    <rect key="frame" x="0.0" y="246" width="200" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="RHJ-RP-n7w">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="CWc-u7-bnI" secondAttribute="bottom" id="0S3-YH-Qnj"/>
+                            <constraint firstAttribute="trailing" secondItem="CWc-u7-bnI" secondAttribute="trailing" id="FQe-ZA-tsM"/>
+                            <constraint firstItem="CWc-u7-bnI" firstAttribute="leading" secondItem="1Rh-RE-Ugu" secondAttribute="leading" id="sEc-dP-FJb"/>
+                            <constraint firstItem="CWc-u7-bnI" firstAttribute="top" secondItem="1Rh-RE-Ugu" secondAttribute="top" constant="38" id="zG7-ES-JgI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sidebar" destination="qd2-Vq-nCf" id="SKt-yv-Fm5"/>
+                    </connections>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="AoX-Ax-J3F" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="790"/>
+            <point key="canvasLocation" x="679" y="594"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="NKP-tg-fO0">
+        <scene sceneID="AJN-9e-nOi">
             <objects>
-                <viewController id="zxP-FI-Cr6" sceneMemberID="viewController">
-                    <view key="view" id="pc0-1I-W1e">
-                        <rect key="frame" x="0.0" y="0.0" width="886" height="553"/>
+                <viewController id="Ayf-cg-MIv" sceneMemberID="viewController">
+                    <view key="view" id="gyU-7d-nTv">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szP-jU-SXu">
-                                <rect key="frame" x="783" y="13" width="89" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Confirm" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jnK-MG-4Es">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h6O-Hh-TNE">
-                                <rect key="frame" x="695" y="13" width="82" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pf2-FB-IgT">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent" base64-UTF8="YES">
-Gw
-</string>
-                                </buttonCell>
-                            </button>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gD7-kx-PFN">
-                                <rect key="frame" x="304" y="330" width="379" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="This page will have a bunch of different settings on it. www.github.com/alichtman/stronghold has the hierarchy set up already." drawsBackground="YES" id="dd7-O3-nuj">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                        </subviews>
                     </view>
                 </viewController>
-                <customObject id="9u3-Ug-oCd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="pfH-55-RGj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747" y="876.5"/>
+            <point key="canvasLocation" x="679" y="1123"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="stronghold-icon" width="3040" height="2880"/>
-    </resources>
 </document>
