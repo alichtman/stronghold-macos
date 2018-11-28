@@ -14,15 +14,3 @@ After the original CLI was received so well, reaching a wider audience was an ob
 #### Tech Stack
 
 `stronghold-macOS` is written entirely in `Swift 4`.
-
-**Libraries**
-
-* Probably some libraries used.
-* And another one too probably.
-
-#### Developers
-
-* [Aaron Lictman](https://github.com/alichtman)
-* [Farid Waziri](https://github.com/FaridWaziri-CalBear)
-
-
