@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		18851A5520EF0EBE000D3396 /* SystemUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18851A5420EF0EBE000D3396 /* SystemUtilities.swift */; };
-		1897009820E905F40031BCD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897009720E905F40031BCD4 /* AppDelegate.swift */; };
-		1897009C20E905F50031BCD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1897009B20E905F50031BCD4 /* Assets.xcassets */; };
 		1897009F20E905F50031BCD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1897009D20E905F50031BCD4 /* Main.storyboard */; };
 		189700AB20E905F50031BCD4 /* stronghold_macOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189700AA20E905F50031BCD4 /* stronghold_macOSUITests.swift */; };
 		18BAC7B020FC677900D046D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BAC7AF20FC677900D046D2 /* MainViewController.swift */; };
+		AA33B82421B0D2E900DB7772 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33B81B21B0D2E800DB7772 /* SplitViewController.swift */; };
+		AA33B82621B0D2E900DB7772 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33B81D21B0D2E900DB7772 /* ContentViewController.swift */; };
+		AA33B82721B0D2E900DB7772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA33B81E21B0D2E900DB7772 /* Assets.xcassets */; };
+		AA33B82921B0D2E900DB7772 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33B82121B0D2E900DB7772 /* AppDelegate.swift */; };
+		AA33B82B21B0D2E900DB7772 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA33B82321B0D2E900DB7772 /* Info.plist */; };
+		AAE77BD321B194E200DFE929 /* CollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE77BD121B194E200DFE929 /* CollectionViewItem.swift */; };
+		AAE77BD421B194E200DFE929 /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE77BD221B194E200DFE929 /* CollectionViewItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,15 +33,19 @@
 /* Begin PBXFileReference section */
 		18851A5420EF0EBE000D3396 /* SystemUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemUtilities.swift; sourceTree = "<group>"; };
 		1897009420E905F40031BCD4 /* stronghold-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stronghold-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1897009720E905F40031BCD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1897009B20E905F50031BCD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1897009E20E905F50031BCD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		189700A020E905F50031BCD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		189700A120E905F50031BCD4 /* stronghold_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stronghold_macOS.entitlements; sourceTree = "<group>"; };
 		189700A620E905F50031BCD4 /* stronghold-macOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stronghold-macOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189700AA20E905F50031BCD4 /* stronghold_macOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stronghold_macOSUITests.swift; sourceTree = "<group>"; };
 		189700AC20E905F50031BCD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BAC7AF20FC677900D046D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AA33B81B21B0D2E800DB7772 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		AA33B81D21B0D2E900DB7772 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		AA33B81E21B0D2E900DB7772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA33B82021B0D2E900DB7772 /* stronghold_macOS.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = stronghold_macOS.entitlements; sourceTree = "<group>"; };
+		AA33B82121B0D2E900DB7772 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA33B82321B0D2E900DB7772 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE77BD121B194E200DFE929 /* CollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewItem.swift; sourceTree = "<group>"; };
+		AAE77BD221B194E200DFE929 /* CollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +87,17 @@
 		1897009620E905F40031BCD4 /* stronghold-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				1897009720E905F40031BCD4 /* AppDelegate.swift */,
 				18851A5420EF0EBE000D3396 /* SystemUtilities.swift */,
-				1897009B20E905F50031BCD4 /* Assets.xcassets */,
+				AA33B82121B0D2E900DB7772 /* AppDelegate.swift */,
+				AA33B81E21B0D2E900DB7772 /* Assets.xcassets */,
+				AA33B82321B0D2E900DB7772 /* Info.plist */,
+				AA33B82021B0D2E900DB7772 /* stronghold_macOS.entitlements */,
 				1897009D20E905F50031BCD4 /* Main.storyboard */,
-				189700A020E905F50031BCD4 /* Info.plist */,
-				189700A120E905F50031BCD4 /* stronghold_macOS.entitlements */,
+				AA33B81B21B0D2E800DB7772 /* SplitViewController.swift */,
 				18BAC7AF20FC677900D046D2 /* MainViewController.swift */,
+				AA33B81D21B0D2E900DB7772 /* ContentViewController.swift */,
+				AAE77BD121B194E200DFE929 /* CollectionViewItem.swift */,
+				AAE77BD221B194E200DFE929 /* CollectionViewItem.xib */,
 			);
 			path = "stronghold-macOS";
 			sourceTree = "<group>";
@@ -179,7 +192,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1897009C20E905F50031BCD4 /* Assets.xcassets in Resources */,
+				AA33B82721B0D2E900DB7772 /* Assets.xcassets in Resources */,
+				AAE77BD421B194E200DFE929 /* CollectionViewItem.xib in Resources */,
+				AA33B82B21B0D2E900DB7772 /* Info.plist in Resources */,
 				1897009F20E905F50031BCD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +215,10 @@
 			files = (
 				18BAC7B020FC677900D046D2 /* MainViewController.swift in Sources */,
 				18851A5520EF0EBE000D3396 /* SystemUtilities.swift in Sources */,
-				1897009820E905F40031BCD4 /* AppDelegate.swift in Sources */,
+				AA33B82421B0D2E900DB7772 /* SplitViewController.swift in Sources */,
+				AA33B82921B0D2E900DB7772 /* AppDelegate.swift in Sources */,
+				AA33B82621B0D2E900DB7772 /* ContentViewController.swift in Sources */,
+				AAE77BD321B194E200DFE929 /* CollectionViewItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
