@@ -63,7 +63,8 @@ extension MainViewController: NSOutlineViewDataSource {
                 initialLoad = false
             }
             if windowFocused && rowView.isSelected {
-                rowView.backgroundColor = #colorLiteral(red: 0.9900000095, green: 0.8799999952, blue: 0.6499999762, alpha: 1) // Xcode 9 asset colours
+                let color = NSColor(calibratedHue: 0.675, saturation: 0.44, brightness: 0.78, alpha: 0.4)
+                rowView.backgroundColor = color // Xcode 9 asset colours
             }
             else if rowView.isSelected {
                 rowView.backgroundColor = #colorLiteral(red: 0.8899999857, green: 0.8899999857, blue: 0.8799999952, alpha: 1)
@@ -78,7 +79,7 @@ extension MainViewController: NSOutlineViewDataSource {
         }
     }
     func setInitialRowColour() {
-        sidebar.rowView(atRow: 0, makeIfNecessary: true)?.backgroundColor = NSColor(red: 0.99, green: 0.88, blue: 0.55, alpha: 1)
+        sidebar.rowView(atRow: 0, makeIfNecessary: true)?.backgroundColor = NSColor(calibratedHue: 0.675, saturation: 0.44, brightness: 0.78, alpha: 0.4)
         contentVC?.updateLabel(newText: sectionHeaders[0])
     }
     // Remove default selection colour

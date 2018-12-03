@@ -15,9 +15,6 @@ class CollectionViewItem: NSCollectionViewItem {
         view.wantsLayer = true
         let backgroundColor = NSColor(calibratedHue: 0.675, saturation: 0.44, brightness: 0.78, alpha: 0.4)
         view.layer?.backgroundColor = backgroundColor.cgColor
-//        view.layer?.borderColor = CGColor.black
-//        view.layer?.borderWidth = 0.5
-        view.layer?.cornerRadius = 5
     }
     
 }

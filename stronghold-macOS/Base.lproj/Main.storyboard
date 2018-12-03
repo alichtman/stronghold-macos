@@ -195,21 +195,20 @@
             <objects>
                 <viewController id="Ayf-cg-MIv" customClass="ContentViewController" customModule="stronghold_macOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="gyU-7d-nTv">
-                        <rect key="frame" x="0.0" y="0.0" width="354" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuO-Jq-gAF">
-                                <rect key="frame" x="0.0" y="0.0" width="354" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="icj-Cq-V5I">
-                                    <rect key="frame" x="0.0" y="0.0" width="354" height="300"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView id="BHw-Ze-vfq">
-                                            <rect key="frame" x="0.0" y="0.0" width="354" height="300"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" id="ewy-nO-3iZ">
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" id="ewy-nO-3iZ">
                                                 <size key="itemSize" width="350" height="100"/>
-                                                <edgeInsets key="sectionInset" left="2" right="2" top="2" bottom="2"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </collectionView>
