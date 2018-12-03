@@ -9,17 +9,17 @@
         <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem" customModule="stronghold_macOS" customModuleProvider="target">
             <connections>
                 <outlet property="label" destination="sJE-wg-2gu" id="6jE-cq-IYr"/>
-                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="nez-Wz-TCf"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="350" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJE-wg-2gu">
-                    <rect key="frame" x="42" y="16" width="283" height="17"/>
+                    <rect key="frame" x="34" y="41" width="283" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Hello" id="WIv-HF-J4S">
                         <font key="font" usesAppearanceFont="YES"/>

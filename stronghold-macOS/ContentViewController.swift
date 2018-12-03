@@ -8,9 +8,7 @@
 
 import Cocoa
 
-class ContentViewController: NSViewController, NSCollectionViewDelegate, NSCollectionViewDataSource {
-    @IBOutlet weak var label: NSTextField!
-    @IBOutlet weak var collectionView: NSCollectionView!
+class ContentViewController: NSViewController, NSCollectionViewDelegate, NSCollectionViewDataSource {    @IBOutlet weak var collectionView: NSCollectionView!
     var text = ""
     
     override func viewDidLoad() {
@@ -19,11 +17,9 @@ class ContentViewController: NSViewController, NSCollectionViewDelegate, NSColle
         collectionView!.register(item, forItemWithIdentifier: .collectionViewItem)
         collectionView.delegate = self
         collectionView.dataSource = self
-        
     }
     func updateLabel(newText: String) {
         text = newText
-        label.stringValue = newText
         self.collectionView.reloadData()
     }
     
@@ -34,6 +30,7 @@ class ContentViewController: NSViewController, NSCollectionViewDelegate, NSColle
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
         let item = collectionView.makeItem(withIdentifier: .collectionViewItem, for: indexPath)
         item.textField?.stringValue = text
+        
         return item
     }
 }
