@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -45,7 +46,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IQv-IB-iLA">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -69,7 +70,7 @@
         <!--Split View Controller-->
         <scene sceneID="Paf-ff-BpK">
             <objects>
-                <splitViewController id="a2i-R8-bxM" sceneMemberID="viewController">
+                <splitViewController id="a2i-R8-bxM" customClass="SplitViewController" customModule="stronghold_macOS" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="zS6-kZ-unN"/>
                         <splitViewItem id="ivQ-02-5LR"/>
@@ -82,6 +83,8 @@
                         </connections>
                     </splitView>
                     <connections>
+                        <outlet property="contentView" destination="ivQ-02-5LR" id="eh3-a7-gJy"/>
+                        <outlet property="mainView" destination="zS6-kZ-unN" id="zKx-8W-37j"/>
                         <outlet property="splitView" destination="boq-Y9-HCF" id="kge-4M-LD0"/>
                         <segue destination="IPi-NK-tqr" kind="relationship" relationship="splitItems" id="Nvb-y8-dhq"/>
                         <segue destination="Ayf-cg-MIv" kind="relationship" relationship="splitItems" id="Rk8-gU-Bhz"/>
@@ -112,7 +115,7 @@
                                             <color key="backgroundColor" red="0.0" green="0.41176470588235292" blue="0.85098039215686272" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn identifier="" width="197" minWidth="40" maxWidth="1000" id="moM-op-dBW">
+                                                <tableColumn width="197" minWidth="40" maxWidth="1000" id="moM-op-dBW">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Items">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -187,18 +190,55 @@
             </objects>
             <point key="canvasLocation" x="679" y="594"/>
         </scene>
-        <!--View Controller-->
+        <!--Content View Controller-->
         <scene sceneID="AJN-9e-nOi">
             <objects>
-                <viewController id="Ayf-cg-MIv" sceneMemberID="viewController">
+                <viewController id="Ayf-cg-MIv" customClass="ContentViewController" customModule="stronghold_macOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="gyU-7d-nTv">
                         <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuO-Jq-gAF">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="icj-Cq-V5I">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView id="BHw-Ze-vfq">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" id="ewy-nO-3iZ">
+                                                <size key="itemSize" width="350" height="100"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </collectionView>
+                                    </subviews>
+                                </clipView>
+                                <edgeInsets key="contentInsets" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Va9-fa-PWR">
+                                    <rect key="frame" x="-100" y="-100" width="348" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="KrG-BA-fJk">
+                                    <rect key="frame" x="336" y="0.0" width="16" height="280"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PuO-Jq-gAF" secondAttribute="bottom" id="EKP-Vx-hQV"/>
+                            <constraint firstAttribute="trailing" secondItem="PuO-Jq-gAF" secondAttribute="trailing" id="H7p-66-pLT"/>
+                            <constraint firstItem="PuO-Jq-gAF" firstAttribute="top" secondItem="gyU-7d-nTv" secondAttribute="top" id="ROy-1N-fih"/>
+                            <constraint firstItem="PuO-Jq-gAF" firstAttribute="leading" secondItem="gyU-7d-nTv" secondAttribute="leading" id="c6P-s5-lWe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="BHw-Ze-vfq" id="ibc-ez-Rvw"/>
+                    </connections>
                 </viewController>
                 <customObject id="pfH-55-RGj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="1123"/>
+            <point key="canvasLocation" x="680" y="1123"/>
         </scene>
     </scenes>
 </document>
